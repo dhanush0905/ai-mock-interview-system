@@ -47,7 +47,7 @@ const AuthForm = ({type}:{type:FormType}) => {
                     <Image src="/logo.svg" alt="logo" height={32} width={38} />
                     <h2 className="text-primary-100"> Mocktivate</h2>
                 </div>
-                <h3>Practice Job Interview with out AI</h3>
+                <h3>Practice Job Interview with our AI</h3>
 
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className=" w-full space-y-6 mt-4 form">
@@ -59,8 +59,8 @@ const AuthForm = ({type}:{type:FormType}) => {
                 </Form>
                 <p className="text-center">
                     {!isSignIn ? "No account yet?": 'Existing account?'}
-                    <Link href={!isSignIn? '/sign-in': 'sign-up'} className="font-bold text-user-primary ml-1 " >
-                        {!isSignIn ? 'Sign in' : 'Sign up'}
+                    <Link href={!isSignIn? "/sign-in": "/sign-up"} className="font-bold text-user-primary ml-1 " >
+                        {!isSignIn ? "Sign in" : "Sign up"}
                     </Link>
 
                 </p>
